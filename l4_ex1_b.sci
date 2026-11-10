@@ -22,8 +22,10 @@ a2 = horner(G,20*%i);
 mprintf("\na1: %f + j*(%f)\n",real(a1),imag(a1));
 mprintf("Amplitude de Saida: %f\n",0.05*abs(a1));
 mprintf("Fase da Saida: = %f\n",atan(imag(a1)/real(a1))*180/%pi);
+mprintf("Ganho da Saida: = %f\n",20*log10(abs(a1)));
 
 // Resultados para frequencia de 20 rad/s
 mprintf("\na2: %f + j*(%f)\n",real(a2),imag(a2));
 mprintf("Amplitude de Saida: %f\n",0.05*abs(a2));
 mprintf("Fase da Saida: %f\n",atan(imag(a2)/real(a2))*180/%pi);
+mprintf("Ganho da Saida: = %f\n",20*log10(abs(a2)));
